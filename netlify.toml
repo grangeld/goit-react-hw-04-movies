@@ -1,12 +1,8 @@
 [build]
   base    = ""
   publish = "/build"
+  command = "yarn build --type=UMD_DEV && cd fixtures/dom/ && yarn && yarn prestart && yarn build"
 
-[context.production.environment]
-  NODE_VERSION = "15.8.0"
-
-[context.deploy-preview.environment]
-  NODE_VERSION = "15.8.0"
 
 [[redirect]]
 from = "/*"
