@@ -1,8 +1,8 @@
 {
-  "name": "goit-react-hw-03-phonebook",
+  "name": "goit-react-hw-04-movies",
   "version": "0.1.1",
   "private": true,
-  "homepage": "https://grangeld.github.io/goit-react-hw-03-phonebook",
+  "homepage": "https://grangeld.github.io/goit-react-hw-04-movies",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
