@@ -1,6 +1,6 @@
 [build]
   base    = ""
-  publish = "website/build"
+  publish = "/build"
 
 [context.production.environment]
   NODE_VERSION = "15.8.0"
