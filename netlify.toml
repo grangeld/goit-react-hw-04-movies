@@ -1,8 +1,11 @@
 [build]
   base    = ""
   publish = "/build"
-  command = "yarn build --type=UMD_DEV && cd fixtures/dom/ && yarn && yarn prestart && yarn build"
 
+[context.production]
+  publish = "build/"
+  command = "make publish"
+  environment = { ACCESS_TOKEN = "super secret", NODE_VERSION = "15.8.0", NPM_VERSION = "7.6.0" }
 
 [[redirect]]
 from = "/*"
