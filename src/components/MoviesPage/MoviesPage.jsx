@@ -8,8 +8,6 @@ const MovieDetailsPage = () => {
   const history = useHistory();
   const location = useLocation();
   const searchOrder = new URLSearchParams(location.search).get('query');
-  const a = location.search;
-  console.log(a);
   const searchMovie = event => {
     event.preventDefault();
     history.push({ ...location, search: `query=${searchValue}` });
@@ -34,6 +32,7 @@ const MovieDetailsPage = () => {
         )),
       );
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchOrder]);
 
   return (

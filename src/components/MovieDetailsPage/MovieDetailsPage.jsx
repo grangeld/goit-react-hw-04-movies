@@ -7,7 +7,6 @@ import {
   useRouteMatch,
   Switch,
   Route,
-  Link,
 } from 'react-router-dom';
 import {
   getInfoMovieById,
@@ -19,10 +18,8 @@ const MovieDetailsPage = () => {
   const history = useHistory();
   const location = useLocation();
 
-  // console.log(location?.state?.page);
   const { url } = useRouteMatch();
   const movieId = useParams().movieId;
-  // console.log('movieId', movieId);
 
   const [informationAboutFilm, setInformationAboutFilm] = useState('');
   const [castList, setCastList] = useState('');
@@ -87,10 +84,6 @@ const MovieDetailsPage = () => {
       setReviewsText(result);
     });
   }, [movieId]);
-
-  // console.log('useHistory = ', useHistory());
-  // console.log('useLocation = ', useLocation());
-  // console.log('useParams = ', useParams());
 
   return (
     <div>
